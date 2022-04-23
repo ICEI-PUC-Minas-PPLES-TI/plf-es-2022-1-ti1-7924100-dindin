@@ -14,8 +14,11 @@ Auxiliar as pessoas a como gerenciar o próprio dinheiro para conquistar seus ob
 
 ## Professores responsáveis
 
-* Rommel 
-* Roberto 
+* Rommel Vieira Carneiro
+* Roberto Felipe Dias Ferreira da Rocha
+* Johnatan Alves de Oliveira
+* Felipe Augusto Lara Soares
+* Simone de Assis Alves da Silva
 
 ## Instruções de utilização
 
