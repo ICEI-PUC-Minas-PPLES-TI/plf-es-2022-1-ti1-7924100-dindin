@@ -5,17 +5,17 @@ Auxiliar as pessoas a como gerenciar o próprio dinheiro para conquistar seus ob
 
 ## Alunos integrantes da equipe
 
-Leandro Sena de Andrade Machado
-Guilherme Drumond Silva
-Bryan Rosemberg de Abreu
-Gabriel Afonso Infante Vieira
-Arthur do Nascimento Sita Gomes
+* Leandro Sena de Andrade Machado
+* Guilherme Drumond Silva
+* Bryan Rosemberg de Abreu
+* Gabriel Afonso Infante Vieira
+* Arthur do Nascimento Sita Gomes
 
 
 ## Professores responsáveis
 
-* Rommel 1
-* Roberto 2
+* Rommel 
+* Roberto 
 
 ## Instruções de utilização
 
