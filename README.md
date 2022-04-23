@@ -1,18 +1,21 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7699279&assignment_repo_type=AssignmentRepo)
 # Nome do projeto
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+
+Auxiliar as pessoas a como gerenciar o próprio dinheiro para conquistar seus objetivos e metas estabelecidas, pois dessa forma, através de um bom controle financeiro é possível garantir uma estabilidade e independência financeira e evitar vários problemas futuros. 
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+Leandro Sena de Andrade Machado
+Guilherme Drumond Silva
+Bryan Rosemberg de Abreu
+Gabriel Afonso Infante Vieira
+Arthur do Nascimento Sita Gomes
+
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Rommel 1
+* Roberto 2
 
 ## Instruções de utilização
 
