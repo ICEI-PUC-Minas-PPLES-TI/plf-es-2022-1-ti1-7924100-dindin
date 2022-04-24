@@ -3,19 +3,17 @@
 
 ......  COLOQUE AQUI O SEU TEXTO ......
 
-`CURSO` 
+Engenharia de Software
 
 ......  COLOQUE AQUI O SEU TEXTO ......
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+● Leandro Sena de Andrade Machado
+● Guilherme Drumond Silva
+● Bryan Rosemberg de Abreu
+● Gabriel Afonso Infante Vieira
+● Arthur do Nascimento Sita Gomes
 
 # Estrutura do Documento
 
@@ -53,59 +51,30 @@
 
 
 # Introdução
-
+No brasil, várias pessoas sofrem com endividamento, altos impostos e falta de
+dinheiro. Grande parte das vezes, esses problemas estão relacionados com a falta
+de gestão financeira, que é um fator fundamental que todas as pessoas deveriam
+ter conhecimento.
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Falta de gestão financeira.
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo é desenvolver um software capaz de auxiliar as pessoas a como gerenciar o próprio dinheiro para conquistar seus
+objetivos e metas estabelecidas. Além disso, ajudar as pessoas a controlar os gastos e investir melhor o dinheiro.
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Através de um bom controle financeiro é possível garantir uma estabilidade e independência financeira e evitar
+vários problemas futuros. A importância dessa aplicação, é que possibita ajudar várias pessoas que tem problemas financeiros
+e necessitam de uma ajuda de forma adequada.
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Pessoas de classe média e alta, jovens e adultos.
+Descrição:
+
 
 > Descreva quem serão as pessoas que usarão a sua aplicação indicando os
 > diferentes perfis. O objetivo aqui não é definir quem serão os
@@ -125,6 +94,7 @@
 # Especificações do Projeto
 
 ......  COLOQUE AQUI O SEU TEXTO ......
+
 
 > Apresente uma visão geral do que será abordado nesta parte do
 > documento, enumerando as técnicas e/ou ferramentas utilizadas para
@@ -164,8 +134,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Usuário do sistema  | Conhecimento de investimento       | Estabilidade financeira                |
+|Administrador       | Conhecimento de renda.             | Acúmulo de capital.                    |
+                     | Dicas de como gerir o dinheiro.    |
+                     | Facilitação da administração de    |
+                       seu dinheiro.
 
 > Apresente aqui as histórias de usuário que são relevantes para o
 > projeto de sua solução. As Histórias de Usuário consistem em uma
@@ -186,8 +159,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Aba de controle de gastos. | ALTA | 
+|RF-002| Acompanhamento de resultados (gráficos/tabelas).   | ALTA |
+|RF-003| Acompanhamento de mercado em tempo real.   | ALTA |
+|RF-004| Aba de preço baseado no seu tempo de trabalho   | ALTA |
 
 
 ### Requisitos não Funcionais
@@ -195,28 +170,28 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-002| Segurança. |  ALTA | 
+|RNF-004| Criação de usuário (com base no perfil). | MÉDIA | 
+|RNF-005| Baixa Latência. | MÉDIA | 
+|RNF-006| Multiplataforma. | BAIXA | 
 
 > Com base nas Histórias de Usuário, enumere os requisitos da sua
 > solução. Classifique esses requisitos em dois grupos:
 >
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+> - [Requisitos Funcionais (RF)]
 > 
-> **Links Úteis**:
+● Aba de controle de gastos.
+● Acompanhamento de resultados (gráficos/tabelas).
+● Acompanhamento de mercado em tempo real.
+● Aba de preço baseado no seu tempo de trabalho
+>
+> - [Requisitos Não Funcionais (RNF)]
 > 
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+● Segurança.
+● Criação de usuário (com base no perfil).
+● Latência.
+● Multiplataforma
+
 
 
 ## Restrições
@@ -227,14 +202,21 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
+|03| O projeto tem uma expectativa de 20 semanas (de início)  |
+|04| Devido a falta de renda o custo do projeto deve beirar o nulo  |
+|05| O projeto nessas primeiras 20 semanas deve atingir uma alta qualidade, porém com
+poucas funcionalidades (versão beta)        |
 
 
-> Enumere as restrições à sua solução. Lembre-se de que as restrições
-> geralmente limitam a solução candidata.
-> 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+Tempo:
+O projeto tem uma expectativa de 20 semanas (de início).
+
+Custo:
+Devido a falta de renda o custo do projeto deve beirar o nulo.
+
+Qualidade:
+O projeto nessas primeiras 20 semanas deve atingir uma alta qualidade, porém com
+poucas funcionalidades (versão beta).
 
 
 # Projeto de Interface
@@ -289,6 +271,64 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ......  COLOQUE AQUI O SEU TEXTO ......
 
+Processos
+Inicialmente usamos a metodologia design thinking para emfatizar com nossas pessoas e
+público alvo, sempre divergindo e convergindo sobre ideias de soluções e depois
+priorizando as melhores para o desenvolvimento do produto mínimo viável.
+Em todos os processos nossa comunicação informal foi realizada através do whatsapp, e as
+reuniões formais de desenvolvimento do trabalho aconteceram através do discord.
+
+Etapa do entendimento
+
+Matriz CSD e Mapa dos Stakeholders
+
+Foi realizada uma reunião entre toda a equipe para insights sobre o problema, e as
+principais pessoas fundamentais, importantes, e influenciadores do nosso negócio e projeto.
+Entrevista Qualitativa e Highlights de Pesquisa
+Foi realizada uma reunião entre toda a equipe para a determinação das principais perguntas
+de valor qualitativo para a pesquisa de mercado, após determinação das perguntas,
+realizamos um formulário online através do forms e enviamos para amigos, familiares e
+colegas da faculdade.
+Após a mensuração dos resultados obtidos através do questionário elaborado, foi realizada
+uma reunião entre toda a equipe onde determinamos os principais dados qualitativos sobre
+o mercado.
+
+Personas e Mapas de Empatia
+
+Os membros Arthur e Guilherme foram encarregados de construir as personas baseadas
+nos tipos de perfis que responderam o nosso questionário, que ao todo gerou 2 personas.
+Etapa de desenvolvimento
+Brainwriting, Mural de Possibilidades, Priorização de Idéias e Detalhamento das Idéias
+Foi realizada uma reunião entre todos os membros da equipe para determinar desde o
+brainwriting até o detalhamento das idéias. Nós usamos a seguinte metodologia :
+
+● Foram criadas colunas de post-its para cada membro do grupo no ambiente miro.
+● Cada membro inseriu as suas ideias de soluções em sua coluna determinada.
+● Cada membro do grupo avaliou cada ideia escrita em post-it.
+● Foi calculado a média das notas dadas pelos membros do grupo.
+● Cada nota ganhou a sua pontuação através da média das notas calculadas.
+
+As ideias mais bem avaliadas pelos membros do grupo foram priorizadas, e inseridas no
+nosso mural de possibilidades.
+Foi realizada uma reunião entre todos os membros do grupo para a priorização de ideias na
+função custo x impacto.
+Foi realizada uma reunião entre todos os membros do grupo e durante a reunião guilherme,
+bryan, e gabriel fizeram o detalhamento das idéias através do mapa conceitual.
+Etapa de apresentação
+Foi realizada uma reunião entre todos os membros do grupo e durante a reunião o Gabriel
+ficou encarregado de produzir o slide, enquanto os outros membros auxiliavam com as
+idéias e organização, durante o desenvolvimento do slide cada um escolheu a sua parte de
+apresentação.
+
+Etapa da documentação do projeto
+
+Foi realizada uma reunião entre todos os membros do grupo e foi realizada uma divisão de
+tarefas, em que :
+● Gabriel e Bryan ficaram responsáveis pelas especificações do projeto.
+● Artur ficou responsável pelo projeto de interface.
+● Guilherme ficou responsável pela descrição do projeto.
+● Leandro ficou responsável pela metodologia e referências do projeto.
+
 > Nesta parte do documento, você deve apresentar a metodologia 
 > adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
 > a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a
@@ -298,22 +338,16 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 > pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
 > o andamento do projeto, a execução das tarefas e o status de desenvolvimento
 > da solução.
-> 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+
 
 ## Divisão de Papéis
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente a divisão de papéis e tarefas entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Foi realizada uma reunião entre todos os membros do grupo e foi realizada uma divisão de
+tarefas, em que :
+● Gabriel e Bryan ficaram responsáveis pelas especificações do projeto.
+● Artur ficou responsável pelo projeto de interface.
+● Guilherme ficou responsável pela descrição do projeto.
+● Leandro ficou responsável pela metodologia e referências do projeto.
 
 
 ## Ferramentas
