@@ -231,7 +231,8 @@ poucas funcionalidades (versão beta).
 > 
 > **Exemplo**:
 > 
-> ![Exemplo de Wireframe](images/wireframe-example.png)
+> ![Exemplo da pagina de Login](images/Login.png)
+> ![Exemplo da pagina de Criação de conta](images/Register.png)
 
 
 # Metodologia
