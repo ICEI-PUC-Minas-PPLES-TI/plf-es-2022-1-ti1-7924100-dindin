@@ -89,8 +89,8 @@ Ferramentas Utilizadas:
 
 ## Personas e Mapas de Empatia
 
-> [Wireframe example] (images / Persona1.jpg)!
-> [Wireframe example] (images / Persona2.jpg)!
+> ![Wireframe example] (images /Persona1.jpg)!
+> ![Wireframe example] (images /Persona2.jpg)!
 >
 > 
 > 
