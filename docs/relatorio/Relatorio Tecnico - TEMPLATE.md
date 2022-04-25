@@ -5,11 +5,11 @@ Engenharia de Software
 
 ## Participantes
 
-● Leandro Sena de Andrade Machado
-● Guilherme Drumond Silva
-● Bryan Rosemberg de Abreu
-● Gabriel Afonso Infante Vieira
-● Arthur do Nascimento Sita Gomes
+* Leandro Sena de Andrade Machado
+* Guilherme Drumond Silva
+* Bryan Rosemberg de Abreu
+* Gabriel Afonso Infante Vieira
+* Arthur do Nascimento Sita Gomes
 
 # Estrutura do Documento
 
