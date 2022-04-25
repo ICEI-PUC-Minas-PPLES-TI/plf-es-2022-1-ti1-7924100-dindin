@@ -1,5 +1,5 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+FiNet
 
 ......  COLOQUE AQUI O SEU TEXTO ......
 
@@ -74,31 +74,22 @@ e necessitam de uma ajuda de forma adequada.
 
 Pessoas de classe média e alta, jovens e adultos.
 Descrição:
+Pessoas que estão buscando estabilidade financeira e pessoas que buscam diversificar suas formas de renda com investimentos.
 
-
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
- 
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Informações importantes sobre os processos e ferramentas utilizadas no projeto.
 
+Técnicas utilizadas:
+- Design Thinking
+- Framework
 
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+Ferramentas Utilizadas:
+- Miro
+- Figma
+- Docs
+- Drive
+
 
 ## Personas e Mapas de Empatia
 
@@ -269,7 +260,6 @@ poucas funcionalidades (versão beta).
 
 # Metodologia
 
-......  COLOQUE AQUI O SEU TEXTO ......
 
 Processos
 Inicialmente usamos a metodologia design thinking para emfatizar com nossas pessoas e
@@ -499,11 +489,5 @@ tarefas, em que :
 
 # Referências
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados
-> no desenvolvimento do trabalho.
-> 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+- https://slideplayer.com.br/slide/391625/
+- Materias disponibilizados no Canvas. Processos de Design Thinking
