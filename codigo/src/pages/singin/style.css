@@ -1,0 +1,65 @@
+:root {
+    --green-500: #59CD90;
+    --red-500: #EE6352;
+    --white-200: #F0EBD8;
+    --blue-200: #748CAB;
+    --blue-500: #3E5C76;
+    --blue-700: #1D2D44;
+    --blue-900: #0D1321;
+    --black-900: #030405;
+
+    --padding: 8px;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+html {
+    
+    @media (max-width: 1080px) { 
+        font-size: 93.75%; 
+    } 
+        
+    @media (max-width: 720px) { 
+        font-size: 87.5%; 
+    }
+}
+
+body {
+    background-color: var(--blue-900);
+    color: var(--white-200);
+    font-family: 'Roboto', sans-serif;
+}
+
+#banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: start;
+
+    height: 100vh;
+
+    padding-bottom: 5rem;
+}
+
+#hero-container{
+    text-align: start;
+
+    max-width: 460px;
+    width: 100%;
+}
+
+
+#small-hero{
+    color: var(--blue-500);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+#hero{
+    font-size: 2.5rem;   
+}
