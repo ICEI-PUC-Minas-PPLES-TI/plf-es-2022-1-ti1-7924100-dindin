@@ -1,0 +1,81 @@
+:root {
+    --green-500: #59CD90;
+    --red-500: #EE6352;
+    --white-200: #F0EBD8;
+    --blue-200: #748CAB;
+    --blue-500: #3E5C76;
+    --blue-700: #1D2D44;
+    --blue-900: #0D1321;
+    --black-900: #030405;
+
+    --padding: 8px;
+}
+
+
+@media (max-width: 48em) {
+    main {
+        width: 100%;
+        background-color: var(--blue-700);
+        border-radius: 50px 50px 0 0;
+    }
+
+    main > section {
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    #greetings-sub-text {
+        color: var(--blue-500);
+    }
+
+    #singin-button {
+        width: 100%;
+        gap: 0.5rem;
+
+        color: var(--white-200);
+        font-weight: 500;
+        background-color: var(--green-500);
+    }
+
+    #divition-section {
+        position: relative;
+    }
+
+    #divition-section > p {
+        background-color: var(--blue-700); /* Same as the parents Background */
+        width: auto;
+        display: inline-block;
+        z-index: 3;
+        padding: 0 20px 0 20px;
+        color: white;
+        position: relative;
+        font-family: calibri;
+        font-weight: lighter;
+        margin: 0;
+    }
+
+    #divition-section::before {
+        content: '';
+        width: 100%;
+        border-bottom: solid 1px var(--white-200);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: 1;
+    }
+
+    .input-label {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .inputs {
+        padding: 1rem 0.5rem;
+        border: none;
+        border-radius: 8px;
+
+        background-color: var(--blue-200);
+    }
+
+}
