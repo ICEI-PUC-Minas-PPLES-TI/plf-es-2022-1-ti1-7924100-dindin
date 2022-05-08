@@ -16,7 +16,7 @@
     main {
         width: 100%;
         background-color: var(--blue-700);
-        border-radius: 50px 50px 0 0;
+        border-radius: 50px 50px 0 0 !important;
     }
 
     main > section {
@@ -47,7 +47,7 @@
         display: inline-block;
         z-index: 3;
         padding: 0 20px 0 20px;
-        color: white;
+        color: #A8A8B3;
         position: relative;
         font-family: calibri;
         font-weight: lighter;
@@ -57,11 +57,20 @@
     #divition-section::before {
         content: '';
         width: 100%;
-        border-bottom: solid 1px var(--white-200);
+        border-bottom: solid 1px #A8A8B3;
         position: absolute;
         left: 0;
         top: 50%;
         z-index: 1;
+    }
+
+    #google-sing-in{
+        width: 100%;
+        background-color: #EA4335;
+        color: var(--white-200);
+
+        gap: 0.5rem;
+        font-weight: 500; 
     }
 
     .input-label {

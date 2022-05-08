@@ -64,3 +64,78 @@ body > aside {
 #hero{
     font-size: 2.5rem;   
 }
+
+
+
+main {
+    background-color: var(--blue-700);
+    border-radius: 50px 0 0 50px;
+}
+
+main > section {
+    padding: 8rem;
+    text-align: center;
+}
+
+#greetings-sub-text {
+    color: var(--blue-500);
+}
+
+#singin-button {
+    width: 100%;
+    gap: 0.5rem;
+
+    color: var(--white-200);
+    font-weight: 500;
+    background-color: var(--green-500);
+}
+
+#divition-section {
+    position: relative;
+}
+
+#divition-section > p {
+    background-color: var(--blue-700); /* Same as the parents Background */
+    width: auto;
+    display: inline-block;
+    z-index: 3;
+    padding: 0 20px 0 20px;
+    color: #A8A8B3;
+    position: relative;
+    font-family: calibri;
+    font-weight: lighter;
+    margin: 0;
+}
+
+#divition-section::before {
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px #A8A8B3;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+#google-sing-in{
+    width: 100%;
+    background-color: #EA4335;
+    color: var(--white-200);
+
+    gap: 0.5rem;
+    font-weight: 500; 
+}
+
+.input-label {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.inputs {
+    padding: 1rem 0.5rem;
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--blue-200);
+}
