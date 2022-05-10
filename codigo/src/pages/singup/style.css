@@ -1,0 +1,50 @@
+:root {
+    --green-500: #59CD90;
+    --red-500: #EE6352;
+    --white-200: #F0EBD8;
+    --blue-200: #748CAB;
+    --blue-500: #3E5C76;
+    --blue-700: #1D2D44;
+    --blue-900: #0D1321;
+    --black-900: #030405;
+
+    --padding: 8px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+ 
+button:hover {
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gap 2rem */
+.gap-2{
+    padding: 2rem 0;
+}
+
+/* Gap 1rem */
+.gap-1{
+    padding: 1rem 0;
+}
+
+/* Flex - column */
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
