@@ -92,20 +92,20 @@
             <form>
                 <div class="gap-1 flex-column">
                     <label class="input-label" for="name">Nome Completo</label>
-                    <input onchange="onUserChange()" class="inputs" id="name" type="text" placeholder="Introduza seu nome completo...">
+                    <input onchange="getUserName()" class="inputs" id="name" type="text" placeholder="Introduza seu nome completo...">
                 </div>
 
                 <div class="gap-1 flex-column">
                     <label class="input-label" for="email">Email</label>
-                    <input class="inputs" id="email" type="text" placeholder="Introduza seu e-mail...">
+                    <input onchange="getUserEmail()" class="inputs" id="email" type="text" placeholder="Introduza seu e-mail...">
                 </div>
 
                 <div class="gap-1 flex-column">
                     <label class="input-label" for="password">Senha</label>
-                    <input class="inputs" id="password" type="password" placeholder="Digite a sua senha...">
+                    <input onchange="getUserPassword()"  class="inputs" id="password" type="password" placeholder="Digite a sua senha...">
                 </div>
 
-                <button onclick="onSend(event)" class="inputs center" id="singin-button" >
+                <button onclick="createUser(event)" class="inputs center" id="singin-button" >
                     <img src="../../assets/singinlogo.svg" alt="Entrar " >
                     Criar conta
                 </button>
