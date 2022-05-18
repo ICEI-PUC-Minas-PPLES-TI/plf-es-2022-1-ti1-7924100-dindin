@@ -10,12 +10,12 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
 
-    <link rel="stylesheet" href="/pages/singin/style.css">
-    <link rel="stylesheet" href="/pages/singin/mobile.css">
-    <link rel="stylesheet" href="/pages/singin/desktop.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./desktop.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-    <title>Sing in | DinDin</title>
+    <title>Sing up | DinDin</title>
 </head>
 <body>
     <aside id="banner-container">
@@ -84,12 +84,17 @@
                 
             <!-- Greetings -->
             <div class="gap-2">
-                <h2>Bem vindo de volta!</h2>
-                <p id="greetings-sub-text">Por favor, Insira seus dados.</p>
+                <h2>Novo por aqui? Seja bem vindo!</h2>
+                <p id="greetings-sub-text">Por favor, Insira seus dados para criar sua conta.</p>
             </div>
 
             <!-- Form Sing In -->
             <form>
+                <div class="gap-1 flex-column">
+                    <label class="input-label" for="name">Nome Completo</label>
+                    <input onchange="onUserChange()" class="inputs" id="name" type="text" placeholder="Introduza seu nome completo...">
+                </div>
+
                 <div class="gap-1 flex-column">
                     <label class="input-label" for="email">Email</label>
                     <input class="inputs" id="email" type="text" placeholder="Introduza seu e-mail...">
@@ -100,9 +105,9 @@
                     <input class="inputs" id="password" type="password" placeholder="Digite a sua senha...">
                 </div>
 
-                <button class="inputs center" id="singin-button" >
+                <button onclick="onSend(event)" class="inputs center" id="singin-button" >
                     <img src="../../assets/singinlogo.svg" alt="Entrar " >
-                    Entrar
+                    Criar conta
                 </button>
             </form>
 
@@ -117,11 +122,13 @@
 
             <!-- Re-direct -->
             <p class="gap-1" id="link-to-singup">
-                Novo por aqui?
-                <a href="/pages/singup/index.html">Crie uma conta</a>
+                Já possui uma conta? 
+                <a href="../../index.html">Faça o login.</a>
             </p>
 
         </section>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
