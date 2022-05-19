@@ -13,6 +13,7 @@ const database = localStorage.getItem("database") == undefined
         },
     ] 
     : JSON.parse(localStorage.getItem("database"))
+    localStorage.setItem("database", JSON.stringify(database))
 
 
 //? Funções para pegar os valores dos inputs
@@ -32,27 +33,26 @@ function onValidateEmail(mail) {
 }
 
 
-function handleNewUser(newUser) {
+function onValidateNewUser(newUser) {
 
     let invalidEmail = false
 
     database.forEach((user) => {
-        if (user.email === newUser.email)
+        if (user.email === newUser.email){
             invalidEmail = true
+            return
+        }
     })
 
     if (invalidEmail)
-        return alert("Esse email ja esta cadastrado!")
+        return false
 
-    database.push(newUser)
-    localStorage.setItem("database", JSON.stringify(database))
-
-    alert("Cadastro concluido com sucesso!")
+    return true
 }
 
 
 //! Função principal
-function createUser(event) {
+function handleCreateUser(event) {
     event.preventDefault()
 
     const userName = getUserName()
@@ -72,11 +72,17 @@ function createUser(event) {
         password: userPassword,
     }
     
-    handleNewUser(user)
+    if (!onValidateNewUser(user)) 
+        return alert("Este email já esta sendo usado")
+
+
+    database.push(user)
+    localStorage.setItem("database", JSON.stringify(database))
 
     document.querySelector("#name").value = ""
     document.querySelector("#email").value = ""
     document.querySelector("#password").value = ""
+    alert("Cadastro concluido com sucesso!")
 }
 
 
