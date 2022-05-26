@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <title>Visão geral</title>
+</head>
+<body>
+    <aside id="aside" class="close-menu">
+        <div>
+            <img src="../../assets/img/logo-nome.png" alt="logo" /> 
+            <button id="closeMenu" onclick="closeMenu()">
+                <img src="../../assets/close.svg" alt="fechar menu" />
+            </button>
+        </div>
+        <nav>
+            <a class="aling-center gap-2" href="#">
+                <img src="../../assets/img/homeIcon.png" alt="visao geral" />
+                <p>Visão Geral</p>
+            </a>
+            <a class="aling-center gap-2" href="#">
+                <img src="../../assets/img/chartIcon.png" alt="investimentos" />
+                <p>Investimentos</p>
+            </a>
+            <a class="aling-center gap-2" href="#">
+                <img src="../../assets/img/cardIcon.png" alt="Fluxo de Caixa" />
+                <p>Fluxo de Caixa</p>
+            </a>
+            <a class="aling-center gap-2" href="#">
+                <img src="../../assets/user.svg" alt="Usuário" width="24" height="24"/>
+                <p>Usuário</p>
+            </a>
+        </nav>
+    </aside>
+    <main>
+        <button id="openMenu" onclick="openMenu()">
+            <img src="../../assets/bars.svg" alt="abrir Menu" /> 
+        </button>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
