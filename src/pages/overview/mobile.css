@@ -9,15 +9,17 @@
         align-items: center;
         flex-direction: column;
 
-        max-width: 375px;
         width: 100%;
 
         height: 100vh;
         margin-top: 1.5rem;
 
         position: relative;
+
+        z-index: 1;
     }
 
+    /** Close button */
     aside > div > button {
         position: absolute;
         top: 0;
@@ -41,18 +43,59 @@
         background-color: var(--blue-700);
     
         border-radius: 50px 0 0 50px;
-        position: relative;
+
+        z-index: 0;
+    }
+    
+    main > header {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        align-items:center;
+
+        padding: 1.5rem 1.5rem 0.5rem;
+
+        border-bottom: 3px solid var(--blue-500);
     }
 
-    main > button {
-        position: fixed;
-        top: 30px;
-        left: 30px;
-
+    /** Hamburguer Button */
+    main > header > button {
         padding: 0.5rem;
         background-color: var(--blue-500);
         border: none;
         border-radius: 10px;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    #user-avatar {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        gap: 0.5rem;
+
+        text-decoration: none;
+
+        color: var(--blue-200);
+        font-size: 14px;
+    }
+
+    #separator {
+        height: 2rem;
+        border: 1px solid var(--white-200);
+    }
+
+    #user-avatar > div > p {
+        color: var(--white-200);
+        font-size: 1.25rem;
     }
 
     #logo {
