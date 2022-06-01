@@ -42,7 +42,7 @@
         height: 100vh;
         background-color: var(--blue-700);
     
-        border-radius: 50px 0 0 50px;
+        border-radius: 0 0 0 0;
 
         z-index: 0;
     }
@@ -97,6 +97,39 @@
         color: var(--white-200);
         font-size: 1.25rem;
     }
+
+    #investiments-returns {
+        margin-top: 2rem;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+
+        gap: 1.5rem;
+    }
+
+    .return-cards {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--blue-500);
+        font-size: 1rem;
+    }
+
+    #card-return {
+        color: var(--white-200);
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    #total-return {
+        color: var(--green-500);
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
 
     #logo {
         width: 80%;
