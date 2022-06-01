@@ -24,28 +24,43 @@
             </button>
         </div>
         <nav>
-            <a class="aling-center gap-2" href="#">
-                <img src="../../assets/img/homeIcon.png" alt="visao geral" />
+            <a id="active-menu" class="aling-end gap-2" href="#">
+                <img src="../../assets/img/homeIcon.png" alt="Visão Geral" />
                 <p>Visão Geral</p>
             </a>
-            <a class="aling-center gap-2" href="#">
-                <img src="../../assets/img/chartIcon.png" alt="investimentos" />
+            <a class="aling-end gap-2" href="#">
+                <img src="../../assets/img/chartIcon.png" alt="Investimentos" />
                 <p>Investimentos</p>
             </a>
-            <a class="aling-center gap-2" href="#">
+            <a class="aling-end gap-2" href="#">
                 <img src="../../assets/img/cardIcon.png" alt="Fluxo de Caixa" />
                 <p>Fluxo de Caixa</p>
             </a>
-            <a class="aling-center gap-2" href="#">
-                <img src="../../assets/user.svg" alt="Usuário" width="24" height="24"/>
+            <a class="aling-end gap-2" href="#">
+                <img src="../../assets/img/user.png" alt="Usuário" width="24" height="24"/>
                 <p>Usuário</p>
             </a>
         </nav>
     </aside>
-    <main>
-        <button id="openMenu" onclick="openMenu()">
-            <img class="menu-icon" src="../../assets/bars.svg" alt="abrir Menu" /> 
-        </button>
+    <main id="main">
+        <header>
+            <button id="openMenu" onclick="openMenu()">
+                <img class="menu-icon" src="../../assets/bars.svg" alt="abrir Menu" /> 
+            </button>
+
+            <h1>
+                Visão Geral
+            </h1>
+
+            <a href="#" id="user-avatar">
+                <div>
+                    <p>Roberto Doe</p>
+                    <span>robertodoe@gmail.com</sp>
+                </div>
+                <div id="separator"></div>
+                <img src="../../assets/img/user-image.png" alt="Imagem do Usuário">
+            </a>
+        </header>
     </main>
 
     <script src="./script.js"></script>

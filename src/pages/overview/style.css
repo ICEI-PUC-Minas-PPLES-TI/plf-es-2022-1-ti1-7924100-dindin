@@ -54,6 +54,14 @@ button:hover {
     align-items: center;
 }
 
+.aling-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+#active-menu {
+    color: var(--white-200);
+}
 
 
 
