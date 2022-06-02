@@ -44,6 +44,7 @@ main {
     width: 100%;
 
     height: 100vh;
+    overflow-y: auto;
 }
 
 main > header {
@@ -84,7 +85,29 @@ main > header {
     font-size: 1.25rem;
 }
 
-/*? Investiments styles */
+/*? Balance page specific styles */
+
+
+section {
+    padding: 1rem 2rem;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance-buttons {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    
+    background-color: var(--blue-500);
+    color: var(--white-200);
+    
+    font-weight: 500;
+}
+
 
 #investiments-returns {
     margin-top: 2rem;
@@ -116,4 +139,27 @@ main > header {
     color: var(--green-500);
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+table {
+    margin-top: 3rem;
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    width: 100%;
+    overflow-x: scroll;
+
+    text-align: left;
+
+    background-color: var(--blue-900);
+
+    border-spacing: 1.5rem;
+
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#table-heads {
+    color: var(--blue-200);
 }
