@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <title>Usuário | Dindin</title>
+</head>
+<body>
+    <aside id="aside" class="close-menu">
+        <div>
+            <img id="logo" src="../../assets/img/logo-nome.png" alt="logo" /> 
+            <button id="closeMenu" onclick="closeMenu()">
+                <img class="menu-icon" src="../../assets/close.svg" alt="fechar menu" />
+            </button>
+        </div>
+        <nav>
+            <a class="aling-end gap-2" href="../overview/index.html">
+                <img src="../../assets/img/homeIcon.png" alt="Visão Geral" />
+                <p>Visão Geral</p>
+            </a>
+            <a class="aling-end gap-2" href="../investiments/index.html">
+                <img src="../../assets/img/chartIcon.png" alt="Investimentos" />
+                <p>Investimentos</p>
+            </a>
+            <a class="aling-end gap-2" href="#">
+                <img src="../../assets/img/cardIcon.png" alt="Fluxo de Caixa" />
+                <p>Fluxo de Caixa</p>
+            </a>
+            <a id="active-menu" class="aling-end gap-2" href="#">
+                <img src="../../assets/img/active/user.png" alt="Usuário" width="24" height="24"/>
+                <p>Usuário</p>
+            </a>
+        </nav>
+    </aside>
+    <main id="main">
+        <header>
+            <button id="openMenu" onclick="openMenu()">
+                <img class="menu-icon" src="../../assets/bars.svg" alt="abrir Menu" /> 
+            </button>
+
+            <h1>
+                Usuário
+            </h1>
+
+            <a href="#" id="user-avatar">
+                <div>
+                    <p>Roberto Doe</p>
+                    <span>robertodoe@gmail.com</sp>
+                </div>
+                <div id="separator"></div>
+                <img src="../../assets/img/user-image.png" alt="Imagem do Usuário">
+            </a>
+        </header>
+        <section>
+            <div id="user-info">
+                <div id="user-special">
+                    <img src="../../assets/img/user-image-full-size.png" alt="Foto do Usuário">
+                    <div class="user-info-text">
+                        <p>Roberto Doe</p>
+                        <span>robertodoe@gmail.com</sp>
+                    </div>
+                </div>
+                <div class="user-info-text">
+                    <p>Telefone</p>
+                    <span>(31) 99 9999-9999</span>
+                </div>
+                <div class="user-info-text">
+                    <p>Sálario</p>
+                    <span>R$ 4.500,00</span>
+                </div>
+                <div class="user-info-text">
+                    <p>Objetivo</p>
+                    <span>independência financeira</span>
+                </div>
+            </div>
+            <div id="user-separator"></div>
+            <form>
+                <div class="user-inputs">
+                    <label for="name=">Nome</label>
+                    <input type="text" id="name" placeholder="Roberto Doe">
+                </div>
+                <div class="user-inputs">
+                    <label for="cellphone=">Telefone</label>
+                    <input type="text" id="cellphone" placeholder="(31) 99 9999-9999">
+                </div>
+                <div class="user-inputs">
+                    <label for="salary=">Sálario</label>
+                    <input type="number" id="salary" placeholder="4500">
+                </div>
+                <div class="user-inputs">
+                    <label for="objective">Objetivo</label>
+                    <input type="text" id="objective" placeholder="Independência financeira">
+                </div>
+                <div class="user-inputs">
+                    <label for="Email=">Email</label>
+                    <input type="text" id="Email" placeholder=" robertodoe@gmail.com ">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
