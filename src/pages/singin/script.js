@@ -71,6 +71,7 @@ function handleLogin(event) {
     document.querySelector("#email").value = ""
     document.querySelector("#password").value = ""
     alert("Login concluido com sucesso!")
+    location.replace("https://odindin.netlify.app/pages/overview/")
 }
 
 
