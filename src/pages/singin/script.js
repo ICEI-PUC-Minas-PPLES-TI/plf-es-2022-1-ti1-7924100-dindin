@@ -31,16 +31,24 @@ function onValidateEmail(mail) {
 
 function onValidateLogin(loginUser) {
 
-    let validUser = false
+    let validEmail = false
+    let validPassword = false
 
     database.forEach((user) => {
         if (user.email === loginUser.email) {
-            validUser = true
+            validEmail = true
             return
         }
     })
 
-    if (validUser) {
+    database.forEach((user) => {
+        if (user.password === loginUser.password) {
+            validPassword = true
+            return
+        }
+    })
+
+    if (validEmail && validPassword) {
         return true
     }
 
@@ -66,7 +74,7 @@ function handleLogin(event) {
     }
 
     if (!onValidateLogin(user))
-        return alert("Este usuario não existe, por favor crie uma conta")
+        return alert("Credenciais de acesso errados, por favor tente novamente!")
 
     document.querySelector("#email").value = ""
     document.querySelector("#password").value = ""
