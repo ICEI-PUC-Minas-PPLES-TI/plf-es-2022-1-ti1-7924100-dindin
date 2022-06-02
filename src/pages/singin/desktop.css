@@ -73,8 +73,10 @@ main {
 }
 
 main > section {
-    padding: 8rem;
+    padding: 5rem 8rem;
     text-align: center;
+
+    width: 600px;
 }
 
 form {
