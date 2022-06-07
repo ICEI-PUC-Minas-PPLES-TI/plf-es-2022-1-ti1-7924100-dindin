@@ -63,7 +63,8 @@ button:hover {
     color: var(--white-200);
 }
 
-
-
+.menu-icon {
+    width: 20px;
+}
 
 

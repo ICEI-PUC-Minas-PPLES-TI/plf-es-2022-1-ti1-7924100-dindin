@@ -18,4 +18,17 @@ function openMenu() {
     main.classList.add("close-menu");
 }
 
+function openModal() {
+    const modal = document.querySelector("#modal");
+
+    modal.classList.remove("close-modal");
+    modal.classList.add("open-modal");
+}
+
+function closeModal() {
+    const modal = document.querySelector("#modal");
+
+    modal.classList.remove("open-modal");
+    modal.classList.add("close-modal");
+}
 
