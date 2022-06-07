@@ -163,3 +163,94 @@ table {
 #table-heads {
     color: var(--blue-200);
 }
+
+.close-modal {
+    display: none;
+}
+
+.open-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0d1321d9;
+}
+
+#modal-content {
+    max-width: 500px;
+    width: 100%;
+
+    text-align: end;
+
+    padding: 1rem;
+    border-radius: 10px;
+
+    background-color: var(--blue-700);
+}
+
+#modal-content > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.modal-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: var(--white-200);
+    font-size: 1.5rem;
+    font-weight: bold; 
+    width: 50%;
+
+    gap: 0.5rem;
+}
+
+.modal-inputs > input {
+    padding: 0.7rem 0.5rem;
+    background-color: var(--blue-200);
+    border: none;
+    
+    width: 100%;
+
+    border-radius: 8px;
+}
+
+.modal-select {
+    padding: 0.7rem 0.5rem;
+    background-color: var(--blue-200);
+    border: none;
+
+    width: 100%;
+
+    border-radius: 8px;
+}
+
+#modal-button {
+    padding: 0.7rem 0.5rem;
+    background-color: var(--green-500);
+    border: none;
+
+    width: 100%;
+
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+#closeModal {
+    background-color: var(--blue-200);
+    border: none;
+    border-radius: 5px;
+
+    padding: 0.2rem 0.5rem;
+}
