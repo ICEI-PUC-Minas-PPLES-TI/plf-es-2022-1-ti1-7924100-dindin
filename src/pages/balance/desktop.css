@@ -121,7 +121,7 @@ section {
     gap: 1.5rem;
 }
 
-.return-cards {
+.cards-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -129,14 +129,13 @@ section {
     font-size: 1rem;
 }
 
-#card-return {
+.card-return {
     color: var(--white-200);
     font-weight: bold;
     font-size: 1.5rem;
 }
 
 #total-return {
-    color: var(--green-500);
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -253,4 +252,18 @@ table {
     border-radius: 5px;
 
     padding: 0.2rem 0.5rem;
+}
+
+
+
+
+
+
+
+.green-return {
+    color: var(--green-500);
+}
+
+.red-return {
+    color: var(--red-500);
 }
