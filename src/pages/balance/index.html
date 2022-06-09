@@ -161,7 +161,6 @@
                 <button id="closeModal" onclick="closeModal()">
                     <img class="menu-icon" src="../../assets/close.svg" alt="fechar menu" />
                 </button>
-
                 <form>
                     <div class="modal-inputs">
                         <label for="title">Titulo</label>
@@ -171,6 +170,11 @@
                         <label for="price">Valor</label>
                         <input type="number" id="price" placeholder="R$ 0,00">
                     </div>
+                    <div class="modal-inputs">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" >
+                    </div>
+    
                     <div class="modal-inputs" >
                         <label for="category">Categoria</label>
                         <select class="modal-select" name="category" id="category" placeholder="Categoria">
@@ -185,7 +189,7 @@
                             <option value="variable">Variavél</option>
                         </select>
                     </div>
-                    <button id="modal-button">Enviar</button>
+                    <button id="modal-button" onclick="getModalInfo(event)">Enviar</button>
                 </form>
             </div>
         </section>
