@@ -19,7 +19,42 @@ const balanceData = localStorage.getItem("balanceData") == undefined
     ] 
     : JSON.parse(localStorage.getItem("balanceData"))
 localStorage.setItem("balanceData", JSON.stringify(balanceData))
+
+//? Initialized functions
 updateTable()
+onCalculateDesposit()
+onCalculateWithdraw()
+onCalculateTotalReturn()
+
+
+function fromCurrencyToNumber(num) {
+    dotPos = num.indexOf('.');
+    commaPos = num.indexOf(',');
+
+    if (dotPos < 0)
+        dotPos = 0;
+
+    if (commaPos < 0)
+        commaPos = 0;
+
+    if ((dotPos > commaPos) && dotPos)
+        sep = dotPos;
+    else {
+        if ((commaPos > dotPos) && commaPos)
+            sep = commaPos;
+        else
+            sep = false;
+    }
+
+    if (sep == false)
+        return parseFloat(num.replace(/[^\d]/g, ""));
+
+    return parseFloat(
+        num.substr(0, sep).replace(/[^\d]/g, "") + '.' + 
+        num.substr(sep+1, num.length).replace(/[^0-9]/, "")
+    );
+
+}
 
 function closeMenu() {
     const main = document.querySelector("#main");
@@ -55,6 +90,55 @@ function closeModal() {
     modal.classList.add("close-modal");
 }
 
+function onCalculateDesposit() {
+    const depositCard = document.querySelector("#deposit-card");
+
+    let deposit = balanceData.reduce(function (acc, balance) {
+        if (balance.category === 'Entrada') {
+            return acc + fromCurrencyToNumber(balance.price)
+        }
+        return acc
+    }, 0)
+
+    depositCard.innerHTML = Number(deposit).toLocaleString("pt-br", {style: "currency", currency: "BRL"})
+
+    return deposit
+}
+
+function onCalculateWithdraw() {
+    const withdrawCard = document.querySelector("#withdraw-card");
+
+    let withdraw = balanceData.reduce(function (acc, balance) {
+        if (balance.category === 'Saida') {
+            return acc + fromCurrencyToNumber(balance.price)
+        }
+        return acc
+    }, 0)
+
+    withdrawCard.innerHTML = Number(withdraw).toLocaleString("pt-br", {style: "currency", currency: "BRL"})
+    
+    return withdraw
+}
+
+function onCalculateTotalReturn() {
+    const totalReturn = document.querySelector("#total-return")
+
+    const deposit = onCalculateDesposit()
+    const withdraw = onCalculateWithdraw()
+
+    const result = deposit - withdraw
+
+    if (result > 0) {
+        totalReturn.classList.remove("red-return")
+        totalReturn.classList.add("green-return")
+    }
+    if (result < 0) {
+        totalReturn.classList.remove("green-return")
+        totalReturn.classList.add("red-return")
+    }
+
+    totalReturn.innerHTML = Number(result).toLocaleString("pt-br", {style: "currency", currency: "BRL"})
+}
 
 function updateTable() {
     const tableInfo = balanceData
@@ -117,6 +201,9 @@ function handleModalInfo(event){
     localStorage.setItem("balanceData", JSON.stringify(balanceData))
 
     handleAddElementToTable(balance)
+    onCalculateDesposit()
+    onCalculateWithdraw()
+    onCalculateTotalReturn()
 
     title.value = ""
     price.value = 0
