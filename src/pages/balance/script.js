@@ -1,18 +1,20 @@
+const today = new Date()
+
 const balanceData = localStorage.getItem("balanceData") == undefined
     ? [
         {
             title: 'Saida com os amigos',
-            price: 300,
-            category: 'withdraw',
-            type: 'variable',
-            date: new Date(),
+            price: Number(300).toLocaleString("pt-br", {style: "currency", currency: "BRL"}),
+            category: 'Saida',
+            type: 'Variavel',
+            date: today.getFullYear()+'-'+(today.getMonth()+01)+'-'+today.getDate()
         },
         {
             title: 'Freelance',
-            price: 3000,
-            category: 'deposit',
-            type: 'variable',
-            date: new Date(),
+            price: Number(300).toLocaleString("pt-br", {style: "currency", currency: "BRL"}),
+            category: 'Entrada',
+            type: 'Variavel',
+            date: today.getFullYear()+'-'+(today.getMonth()+01)+'-'+today.getDate()
         },
     ] 
     : JSON.parse(localStorage.getItem("balanceData"))
@@ -72,7 +74,29 @@ function updateTable() {
     })
 }
 
-function getModalInfo(event){
+/**
+ * @param { = object, title, price, category, type, date }
+ * @abstract creates <td / > for every element in the array, then appends in the <tr/ > and finally appends to <table/ > 
+ */
+function handleAddElementToTable(balanceContent) {
+    const table = document.querySelector("#table-content")
+
+    const tableContent = Object.values(balanceContent)
+    
+    const tableRow = document.createElement("tr")
+
+    tableContent.forEach((content) => {
+        const tableData = document.createElement("td")
+        tableData.appendChild(document.createTextNode(`${content}`))
+
+        tableRow.appendChild(tableData)
+    })
+
+    table.appendChild(tableRow)
+}
+
+
+function handleModalInfo(event){
     event.preventDefault();
 
     const title = document.querySelector("#title")
@@ -81,17 +105,18 @@ function getModalInfo(event){
     const type = document.querySelector("#type")
     const data = document.querySelector("#data")
 
-
-    balanceData.push({
+    const balance = {
         title: title.value,
-        price: price.value,
-        category: category.value,
-        type: type.value,
-        date: new Date(data.value)
-    })
+        price: Number(price.value).toLocaleString("pt-br", {style: "currency", currency: "BRL"}),
+        category: category.value === "deposit" ? "Entrada" : "Saida",
+        type: type.value === "fixed" ? "Fixa" : "Variavel",
+        date: data.value
+    }
+
+    balanceData.push(balance)
     localStorage.setItem("balanceData", JSON.stringify(balanceData))
 
-    updateTable()
+    handleAddElementToTable(balance)
 
     title.value = ""
     price.value = 0
