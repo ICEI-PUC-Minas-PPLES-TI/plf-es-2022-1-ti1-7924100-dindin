@@ -3,6 +3,7 @@ const today = new Date()
 const balanceData = localStorage.getItem("balanceData") == undefined
     ? [
         {
+            id: uuid(),
             title: 'Saida com os amigos',
             price: Number(300).toLocaleString("pt-br", {style: "currency", currency: "BRL"}),
             category: 'Saida',
@@ -10,6 +11,7 @@ const balanceData = localStorage.getItem("balanceData") == undefined
             date: today.getFullYear()+'-'+(today.getMonth()+01)+'-'+today.getDate()
         },
         {
+            id: uuid(),
             title: 'Freelance',
             price: Number(300).toLocaleString("pt-br", {style: "currency", currency: "BRL"}),
             category: 'Entrada',
@@ -143,17 +145,38 @@ function onCalculateTotalReturn() {
 function updateTable() {
     const tableInfo = balanceData
     const table = document.querySelector("#table-content")
-
+    
     tableInfo.forEach((info) => {
-        const informationArray = Object.values(info)
         const tableRow = document.createElement("tr")
+        
+        tableRow.id = info.id
+        info.id = undefined
+        
+        const informationArray = Object.values(info)
 
         informationArray.forEach((infoArray) => {
-            const tableData = document.createElement("td")
-            tableData.appendChild(document.createTextNode(`${infoArray}`))
-
-            tableRow.appendChild(tableData)
+            if (infoArray !== undefined) {
+                const tableData = document.createElement("td")
+                tableData.appendChild(document.createTextNode(`${infoArray}`))
+                tableRow.appendChild(tableData)
+            }
         })
+
+        const button = document.createElement("button")
+        button.innerText = "Deletar"
+        button.onclick = function(e){
+            const parentId = e.target.parentNode.id
+            const parentElement = document.getElementById(parentId)
+            parentElement.remove()
+
+
+            const balanceData = JSON.parse(localStorage.getItem("balanceData"))
+
+            const newBalanceData = balanceData.filter(balance => balance.id !== parentId)
+            localStorage.setItem("balanceData", JSON.stringify(newBalanceData))
+        }
+
+        tableRow.appendChild(button)
         table.appendChild(tableRow)
     })
 }
@@ -165,16 +188,35 @@ function updateTable() {
 function handleAddElementToTable(balanceContent) {
     const table = document.querySelector("#table-content")
 
-    const tableContent = Object.values(balanceContent)
-    
     const tableRow = document.createElement("tr")
+    tableRow.id = balanceContent.id
+
+    balanceContent.id = undefined
+    const tableContent = Object.values(balanceContent)
+
 
     tableContent.forEach((content) => {
-        const tableData = document.createElement("td")
-        tableData.appendChild(document.createTextNode(`${content}`))
-
-        tableRow.appendChild(tableData)
+        if (content != undefined) {
+            const tableData = document.createElement("td")
+            tableData.appendChild(document.createTextNode(`${content}`))
+            tableRow.appendChild(tableData)
+        }
     })
+
+    const button = document.createElement("button")
+    button.innerText = "Deletar"
+    button.onclick = function(e){
+        const parentId = e.target.parentNode.id
+        const parentElement = document.getElementById(parentId)
+        parentElement.remove()
+
+        const balanceData = JSON.parse(localStorage.getItem("balanceData"))
+
+        const newBalanceData = balanceData.filter(balance => balance.id !== parentId)
+        localStorage.setItem("balanceData", JSON.stringify(newBalanceData))
+    }
+
+    tableRow.appendChild(button)
 
     table.appendChild(tableRow)
 }
@@ -190,6 +232,7 @@ function handleModalInfo(event){
     const data = document.querySelector("#data")
 
     const balance = {
+        id: uuid(),
         title: title.value,
         price: Number(price.value).toLocaleString("pt-br", {style: "currency", currency: "BRL"}),
         category: category.value === "deposit" ? "Entrada" : "Saida",
@@ -210,3 +253,11 @@ function handleModalInfo(event){
     data.value = 0 
     closeModal()
 }
+
+/*? Generate uuid */
+function uuid() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
