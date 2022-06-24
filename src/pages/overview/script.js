@@ -10,7 +10,11 @@ const userWishList = localStorage.getItem("userWishList") == undefined
     : JSON.parse(localStorage.getItem("userWishList"))
 localStorage.setItem("userWishList", JSON.stringify(userWishList))
 
-
+/**
+ * 89 - 100%
+ * 34 - x
+ * x = 34*100/89
+ */
 
 function closeMenu() {
     const main = document.querySelector("#main");
