@@ -75,6 +75,9 @@ function handleChangeUserData(event) {
 function onUpdateUserHeader(userData){
     const name = document.querySelector("#user-name-avatar").innerHTML = userData.name
     const email = document.querySelector("#user-email-avatar").innerHTML = userData.email  
+
+    const headerName = document.querySelector("#user-name-header").innerHTML = userData.name
+    const headerEmail = document.querySelector("#user-email-header").innerHTML = userData.email
 }
 
 function closeMenu() {
