@@ -1,5 +1,5 @@
 # Informações do Projeto
-FiNet
+DinDin
 
 Engenharia de Software
 
@@ -47,30 +47,53 @@ Engenharia de Software
 
 
 # Introdução
-No brasil, várias pessoas sofrem com endividamento, altos impostos e falta de
-dinheiro. Grande parte das vezes, esses problemas estão relacionados com a falta
-de gestão financeira, que é um fator fundamental que todas as pessoas deveriam
-ter conhecimento.
+Esta documentação tem como objetivo principal apresentar uma plataforma web “Dindin”. 
+No brasil, várias pessoas sofrem com endividamento, altos impostos e falta de dinheiro. Grande 
+parte das vezes, esses problemas estão relacionados com a falta de gestão financeira, que é um 
+fator fundamental que todas as pessoas deveriam ter conhecimento. Este trabalho, propõe 
+implementar um sistema que auxilie a gestão financeira de pessoas, por meio de uma plataforma 
+web.
 ## Problema
 
-Falta de gestão financeira.
+De acordo com a pesquisa do SPC Brasil revela que 47, dos jovens, entre 18 e 25 anos, não 
+faz controle de seus gastos. O que é um reflexo do aumento do endividamento brasileiro que 
+atingiu em março o recorde máximo histórico, com 77,5%. Segundo a Pesquisa de 
+Endividamento e Inadimplência do Consumidor, da Confederação Nacional do Comércio de 
+Bens, Serviços e Turismo, o percentual é 10,3 pontos acima do registrado há um ano, quando 
+essa parcela era de 67,3%. Isso revela, que há uma grande carência em relação ao gerenciamento 
+financeiro, que é um fator intensificador da problemática do endividamento.
 
 ## Objetivos
 
-O objetivo é desenvolver um software capaz de auxiliar as pessoas a como gerenciar o próprio dinheiro para conquistar seus
-objetivos e metas estabelecidas. Além disso, ajudar as pessoas a controlar os gastos e investir melhor o dinheiro.
+"Dindin" é uma plataforma web que tem como objetivo amparar as pessoas sobre como 
+gerenciar o próprio dinheiro para conquistar seus objetivos e metas estabelecidas, para isso o 
+sistema apresenta formas e alternativas que garantem um bom controle financeiro, deste modo, 
+possibilitando aos usuários caminhos para garantir uma estabilidade e independência financeira 
+evitando diversos problemas futuros.
 
 ## Justificativa
 
-Através de um bom controle financeiro é possível garantir uma estabilidade e independência financeira e evitar
-vários problemas futuros. A importância dessa aplicação, é que possibita ajudar várias pessoas que tem problemas financeiros
-e necessitam de uma ajuda de forma adequada.
+Com a problemática apresentada, é possível analisar que vários indivíduos possuem 
+diversos problemas financeiros, os quais muitas vezes recorrem a empréstimos bancários, 
+ocasionando assim, em endividamento. Já existem aplicativos que auxiliam as pessoas a 
+gerenciar o dinheiro, porém muitas vezes possuem uma linguagem complexa e inacessível para 
+pessoas que pretendem iniciar sua gestão financeira. Com isso, a desistência relacionada ao 
+aprendizado nesta área é alta, por se tratar de um tema delicado. Levando isso em consideração, 
+desenvolvemos a ideia de criar uma plataforma web feita exclusivamente para pessoas 
+desinformadas nesta área, com linguagem acessível e interface simples.
 
 ## Público-Alvo
 
-Pessoas de classe média e alta, jovens e adultos.
-Descrição:
-Pessoas que estão buscando estabilidade financeira e pessoas que buscam diversificar suas formas de renda com investimentos.
+Após as coletas de dados das entrevistas feitas, foi possível identificar dois tipos de perfis. 
+Cada um destes perfis está relacionado com o perfil da pessoa, um mais ativo e o outro mais 
+passivo e são jovens e adultos de classe média e alta.
+1.5.1: Usuário investidor: Este tipo de perfil é uma pessoa que já possui um certo 
+conhecimento no mercado e busca ampliar seus investimentos, por meio de um gerenciamento 
+financeiro correto. Costumam se arriscar mais ao investir e buscam progredir financeiramente.
+1.5.2: Usuário endividado: Este tipo de perfil é uma pessoa que possui dificuldades 
+financeiras, e busca se reerguer financeiramente. Normalmente são pessoas mais conservadoras 
+que não gostam de assumir muitos riscos.
+
 
 # Especificações do Projeto
 
@@ -109,17 +132,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
                      | Facilitação da administração de    |
                        seu dinheiro.
 
-> Apresente aqui as histórias de usuário que são relevantes para o
-> projeto de sua solução. As Histórias de Usuário consistem em uma
-> ferramenta poderosa para a compreensão e elicitação dos requisitos
-> funcionais e não funcionais da sua aplicação. Se possível, agrupe as
-> histórias de usuário por contexto, para facilitar consultas
-> recorrentes à essa parte do documento.
->
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
@@ -144,9 +156,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-005| Baixa Latência. | MÉDIA | 
 |RNF-006| Multiplataforma. | BAIXA | 
 
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
 > - [Requisitos Funcionais (RF)]
 > 
 ● Aba de controle de gastos.
@@ -239,11 +248,16 @@ poucas funcionalidades (versão beta).
 
 
 Processos
-Inicialmente usamos a metodologia design thinking para emfatizar com nossas pessoas e
-público alvo, sempre divergindo e convergindo sobre ideias de soluções e depois
-priorizando as melhores para o desenvolvimento do produto mínimo viável.
-Em todos os processos nossa comunicação informal foi realizada através do whatsapp, e as
-reuniões formais de desenvolvimento do trabalho aconteceram através do discord.
+Na primeira parte do projeto iniciamos a etapa de concepção, na qual iniciamos o 
+processo de desing thinking. Primeiramente, pesquisamos a respeito das possíveis dores do 
+cliente, para poder definir os tipos de perfis. Foram feitas entrevistas com vários usuários para 
+auxiliar nessa escolha. Após essa etapa, traçamos os tipos de perfis e iniciamos o processo de 
+brainstorm de ideias, onde foram selecionadas, priorizadas e detalhadas.
+Na segunda parte do projeto, iniciamos a prototipação do site, para que depois
+iniciarmos a parte de desenvolvimento, na qual iriamos implantar efetivamente a solução do 
+problema. Durante todo o processo, utilizamos a metodologia Scrum, com reuniões diárias entre 
+10 a 15 minutos e reuniões ocasionais de 1 a 2 horas, para discutirmos sobre o projeto.
+
 
 Etapa do entendimento
 
@@ -323,10 +337,10 @@ tarefas, em que :
 
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
-|Processo de Design Thinkgin  | Miro |  https://miro.com/XXXXXXX | 
-|Repositório de código | GitHub | https://github.com/XXXXXXX | 
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
-|Protótipo Interativo | MavelApp ou Figma | https://figma.com/XXXXXXX | 
+|Processo de Design Thinkgin  | Miro | [ https://miro.com/XXXXXXX ](https://miro.com/app/board/uXjVOBTTW0U=)| 
+|Repositório de código | GitHub | [https://github.com/XXXXXXX](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7924100-dindin) | 
+|Hospedagem do site | Netlify |  [https://XXXXXXX.herokuapp.com](http://Odindin.netlify.app) | 
+|Protótipo Interativo | MavelApp ou Figma | [https://figma.com/XXXXXXX](https://figma.com/file/mYfbKXroiISV9oHnw9Xhyb/Spicy-Girls?node-id=3:10) | 
 
 >
 > Liste as ferramentas empregadas no desenvolvimento do
@@ -334,22 +348,13 @@ tarefas, em que :
 > 
 > As ferramentas empregadas no projeto são:
 > 
-> - Editor de código.
-> - Ferramentas de comunicação
-> - Ferramentas de diagramação
-> - Plataforma de hospedagem
-> 
-> O editor de código foi escolhido porque ele possui uma integração com o
-> sistema de versão. As ferramentas de comunicação utilizadas possuem
-> integração semelhante e por isso foram selecionadas. Por fim, para criar
-> diagramas utilizamos essa ferramenta por melhor captar as
-> necessidades da nossa solução.
-> 
-> **Links Úteis - Hospedagem**:
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Crie seu Site com o HostGator](https://www.hostgator.com.br/como-publicar-seu-site)
-> - [GoDady](https://br.godaddy.com/how-to)
-> - [GitHub Pages](https://pages.github.com/)
+> - Editor de código: Visual Studio Code.
+> - Ferramentas de comunicação: Discord e WhatsApp.
+> - Ferramentas de diagramação: Figma e Miro.
+> - Plataforma de hospedagem: Netlify;
+
+> O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+
 
 ## Controle de Versão
 
@@ -395,7 +400,13 @@ tarefas, em que :
 
 ## Tecnologias Utilizadas
 
-......  COLOQUE AQUI O SEU TEXTO ......
+
+Neste projeto utilizamos as tecnologias HTML, CSS e JavaScript para resolver a problemática.
+Framework: nenhum.
+IDE de desenvolvimento: VSCode.
+Ferramentas: WhatsApp, Discord, Figma, Miro, GitHub, Netlify.
+
+
 
 > Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
 > problema, ou seja, implementar a sua solução. Liste todas as
@@ -404,7 +415,7 @@ tarefas, em que :
 > Apresente também uma figura explicando como as tecnologias estão
 > relacionadas ou como uma interação do usuário com o sistema vai ser
 > conduzida, por onde ela passa até retornar uma resposta ao usuário.
-> 
+
 > Inclua os diagramas de User Flow, esboços criados pelo grupo
 > (stoyboards), além dos protótipos de telas (wireframes). Descreva cada
 > item textualmente comentando e complementando o que está apresentado
