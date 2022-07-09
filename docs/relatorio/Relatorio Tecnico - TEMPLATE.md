@@ -1,5 +1,4 @@
-# Informações do Projeto
-DinDin
+# DinDin
 
 Engenharia de Software
 
@@ -114,10 +113,6 @@ Ferramentas Utilizadas:
 
 > ![Wireframe example](images/Persona1.jpg)
 > ![Wireframe example](images/Persona2.jpg)
->
-> 
-> 
-> 
 
 
 ## Histórias de Usuários
@@ -199,47 +194,14 @@ poucas funcionalidades (versão beta).
 
 # Projeto de Interface
 
-......  COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
-
-> Apresente as principais interfaces da solução. Discuta como 
-> foram elaboradas de forma a atender os requisitos funcionais, não
-> funcionais e histórias de usuário abordados nas [Especificações do
-> Projeto](#especificações-do-projeto).
-
 ## User Flow
 
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
-> mapear todo fluxo de telas do site ou app. Essa técnica funciona
-> para alinhar os caminhos e as possíveis ações que o usuário pode
-> fazer junto com os membros de sua equipe.
->
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
->
-> **Exemplo**:
-> 
 > ![Exemplo de UserFlow](images/userflow.png)
 
 
 ## Wireframes
 
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
 
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante ao
-> layout de elementos fundamentais na interface.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> 
-> **Exemplo**:
-> 
 > ![Exemplo da pagina de Login](images/Login.png)
 > ![Exemplo da pagina de Criação de conta](images/Register.png)
 > ![Exemplo da pagina de Criação de conta](images/Overview.png)
