@@ -242,6 +242,9 @@ poucas funcionalidades (versão beta).
 > 
 > ![Exemplo da pagina de Login](images/Login.png)
 > ![Exemplo da pagina de Criação de conta](images/Register.png)
+> ![Exemplo da pagina de Criação de conta](images/Overview.png)
+> ![Exemplo da pagina de Criação de conta](images/Balance.png)
+> ![Exemplo da pagina de Criação de conta](images/Investiments.png)
 
 
 # Metodologia
