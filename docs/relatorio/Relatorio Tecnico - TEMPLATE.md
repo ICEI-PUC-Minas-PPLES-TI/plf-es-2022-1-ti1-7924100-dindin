@@ -323,124 +323,77 @@ tarefas, em que :
 
 ## Controle de Versão
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Discuta como a configuração do projeto foi feita na ferramenta de
-> versionamento escolhida. Exponha como a gerência de tags, merges,
-> commits e branchs é realizada. Discuta como a gerência de issues foi
-> realizada.
-> A ferramenta de controle de versão adotada no projeto foi o
-> [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-> foi utilizado para hospedagem do repositório `upstream`.
-> 
+A ferramenta de controle de versão adotada no projeto "Dindin" foi o GitHub, na qual foi utilizado para hospedagem do repositório.
+ 
 > O projeto segue a seguinte convenção para o nome de branchs:
 > 
 > - `master`: versão estável já testada do software
-> - `unstable`: versão já testada do software, porém instável
-> - `testing`: versão em testes do software
 > - `dev`: versão de desenvolvimento do software
 > 
-> Quanto à gerência de issues, o projeto adota a seguinte convenção para
-> etiquetas:
-> 
-> - `bugfix`: uma funcionalidade encontra-se com problemas
-> - `enhancement`: uma funcionalidade precisa ser melhorada
-> - `feature`: uma nova funcionalidade precisa ser introduzida
->
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [5 Git Workflows & Branching Strategy to deliver better code](https://zepel.io/blog/5-git-workflows-to-improve-development/)
->
-> **Exemplo - GitHub Feature Branch Workflow**:
->
-> ![Exemplo de Wireframe](images/Github-Workflow.png)
+> Quanto à gerência de issues, o projeto não adotou nenhuma utilização de issues e tags.
 
 # **############## SPRINT 1 ACABA AQUI #############**
 
 
 # Projeto da Solução
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
 ## Tecnologias Utilizadas
 
+## Tecnologias utilizadas
+| TIPO | NOME |
+|------|------|
+| Linguagem de marcação | HTML |
+| Linguagem de estilo | CSS |
+| Linguagem de programação | JavaScript |
+| IDE de desenvolvimento | Visual Studio Code |
+| Controle de versão | GitHub |
+| Hospedagem | Netlify |
+| Comunicação | Discord |
+| Comunicação | WhatsApp |
+| Diafragmação | Figma |
+| Diafragmação | Miro |
 
-Neste projeto utilizamos as tecnologias HTML, CSS e JavaScript para resolver a problemática.
-Framework: nenhum.
-IDE de desenvolvimento: VSCode.
-Ferramentas: WhatsApp, Discord, Figma, Miro, GitHub, Netlify.
+## Plano de testes
 
+| ID | CENÁRIO | REQUISITO RELACIONADO |
+|----|---------|-----------------------|
+| 1 | `Cadastro de despesa` <br><br> Passo a passo: <br> `1.` Fazer login <br> `2.` Abrir a aba de fluxo de caixa <br> `3.` preencher todos os campos <br> `4.` Clicar no botão "Enviar" <br><br> Após clicar no botão, o sistema mostrará adicionara as despesas/entradas em uma tabela. | RF-001 | 
+| 2 | `Cadastrar Usuario` <br><br> Passo a passo: <br> `1.` Abrir a página de login <br> `2.` Clcar no botão de se registrar <br> `3.` Preencher todos os campos. <br> `4.` Clicar no botao de se cadastrar <br> `6.`| RF-002 |
+| 3 |  `Cadastro de desejo` <br><br> Passo a passo: <br> `1.` Fazer login <br> `2.` Abrir a pagina de visão geral <br> `3.` Clicar no botão de +<br> `4.` Digitar as informações corretamente <br> | RF-003 |
 
-
-> Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
-> problema, ou seja, implementar a sua solução. Liste todas as
-> tecnologias envolvidas, linguagens a serem utilizadas, serviços web,
-> frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-> Apresente também uma figura explicando como as tecnologias estão
-> relacionadas ou como uma interação do usuário com o sistema vai ser
-> conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
-> Inclua os diagramas de User Flow, esboços criados pelo grupo
-> (stoyboards), além dos protótipos de telas (wireframes). Descreva cada
-> item textualmente comentando e complementando o que está apresentado
-> nas imagens.
+## Registro de testes 
+Os testes foram fundamentais para identificar falhas no desenvolvimento e na experiência do usuário.
 
 ## Arquitetura da solução
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
-
-> Inclua um diagrama da solução e descreva os módulos e as tecnologias
-> que fazem parte da solução. Discorra sobre o diagrama.
-> 
-> **Exemplo do diagrama de Arquitetura**:
-> 
-> ![Exemplo de Arquitetura](images/arquitetura-exemplo.png)
-
+As tecnologias que fazem parte da solução são HTML, CSS e JavaScript. O HTML foi utilizado na parte de estruturação do site, já o CSS foi utilizado na parte de estilização do site e responsividade e por fim o JavaScript foi utilizado na parte de lógica para torna-lo funcional.
 
 # Avaliação da Aplicação
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
-
-## Plano de Testes
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Enumere quais cenários de testes foram selecionados para teste. Neste
-> tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
-> de usuários que foi escolhido para participar do teste e as
-> ferramentas utilizadas.
-> 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-
-## Ferramentas de Testes (Opcional)
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Comente sobre as ferramentas de testes utilizadas.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| Entrada | Resultado esperado |
+|------|------|
+| Título da despesa/entrada | Cadastro das despesas/entradas apresentados em uma tabela|
+| Desejo | Nome do desejo apresentado na tela |
+| Salário | Salário registrado com sucesso. |
 
 ## Registros de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Após 8 entrevistas com usuários, identificamos que o tempo médio de acesso das 
+funcionalidades é de aproximadamente 3 minutos. A maior parte dos usuários, tiveram 
+facilidade de entender como se utilizava o sistema, porém alguns poucos tiveram dificuldade 
+na hora de entender o que significava algumas funções. As funções apontadas pelos usuários 
+que tiveram dificuldade foram o registro de desejo/metas, na qual não sabiam para o que que 
+servia de forma exata e o cadastro de despesas e entradas, na qual alguns não sabiam o que era 
+uma despesa fixa e variável. No geral, o feedback apontado foi de um site intuitivo e simples 
+de se entender.
 
-> Discorra sobre os resultados do teste. Ressaltando pontos fortes e
-> fracos identificados na solução. Comente como o grupo pretende atacar
-> esses pontos nas próximas iterações. Apresente as falhas detectadas e
-> as melhorias geradas a partir dos resultados obtidos nos testes.
 
 
 # Referências
 
-- https://slideplayer.com.br/slide/391625/
-- Materias disponibilizados no Canvas. Processos de Design Thinking
+6 REFERENCIAS 
+https://www.cimatecjr.com.br/por-que-os-brasileiros-tem-dificuldade-em-gestao-financeira
+https://www.rhportal.com.br/artigos-rh/falta-de-gestao-financeira-pode-ser-fatal-parauma-empresa/
+https://agenciabrasil.ebc.com.br/radioagencia-nacional/economia/audio/2022-03/quase78-da-populacao-esta-endividada-no-brasil
+https://g1.globo.com/economia/noticia/2022/05/02/endividamento-e-inadimplencia-dasfamilias-batem-novo-recorde-em-abril.ghtml
+https://www.cnnbrasil.com.br/business/endividamento-das-familias-chega-775-maiorvalor-em-12-anos-aponta-cnc
