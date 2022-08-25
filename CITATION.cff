@@ -1,0 +1,42 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: T2-G4 - Falta de gestão financeira 3 (Dindin)
+authors:
+  - family-names: do Nascimento Sita Gomes
+    given-names: Arthur
+  - family-names: Rosenberg de Abreu
+    given-names: Bryan
+  - family-names: Afonso Infante Vieira
+    given-names: Gabriel
+  - family-names: Drumond Silva
+    given-names: Guilherme
+  - family-names: Sena de Andrade Machado
+    given-names: Leandro
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Augusto Lara Soares
+    given-names: Felipe
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Alves de Oliveira
+    given-names: Jonathan
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Felipe Dias Ferreira da Rocha
+    given-names: Roberto    
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: de Assis Alves da Silva
+    given-names: Simone
+
+keywords:
+  - financeiro
+  - gestão
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7924100-dindin
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2022-07-14    
